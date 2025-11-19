@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bantuan | Bramasta</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffc300">
+  <link rel=”icon” href=”img/favicon-bramasta.ico” type=”image/x-icon”>
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">E-Bramasta 2025</h1>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kita.html">Us</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="pustaka.html">Library</a></li>
+        <li><a href="forum.html">Discuss</a></li>
+        <li><a href="saran.html" class="active">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Pusat Bantuan</h2>
+    <div class="form-card">
+      <p style="text-align: center; margin-bottom: 1.5rem; color: #ffc300;">Pesan akan dikirimkan secara anonim ke email admin.</p>
+      
+      <label for="nama">Nama</label>
+      <input id="nama" type="text" placeholder="Isi nama atau Anonim..." />
+      
+      <label for="isi">Pesan</label>
+      <textarea id="isi" rows="4" placeholder="Tuliskan pesan di sini..."></textarea>
+      
+      <button id="sendSaran" class="btn">Send</button>
+    </div>
+  </main>
+  
+  <button id="logout" title="Logout"><i class="fas fa-power-off"></i></button>
+
+  <footer>
+    © 2025 Bramasta by Just Cosmic.
+  </footer>
+</body>
+</html>

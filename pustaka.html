@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pustaka & Artikel | Bramasta</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> 
+  
+  <script src="script.js" defer></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffc300">
+  <link rel=”icon” href=”img/favicon-bramasta.ico” type=”image/x-icon”>
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">E-Bramasta 2025</h1>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kita.html">Us</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="pustaka.html" class="active">Library</a></li>
+        <li><a href="forum.html">Comment</a></li>
+        <li><a href="saran.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Pusataka & Repository</h2>
+    
+    <div class="pustaka-layout">
+        
+        <div class="kolom-kiri">
+            <h3>Pustaka</h3>
+            
+            <button class="btn btn-menu" id="bukuBtn">📚 Buku Pelajaran</button>
+            
+            <button class="btn btn-menu active" id="artikelBtn">📝 Repository Artikel</button>
+            
+            <hr style="margin: 15px 0; border-color: rgba(255,195,0,0.3);">
+
+            <p style="font-size: 0.9em; margin-bottom: 10px; color: #aaa;">Kontribusi Artikel:</p>
+            <button id="uploadArtikelBtn" class="btn" style="width: 100%; display: none;">⬆️ Upload Artikel</button>
+        </div>
+
+        <div class="kolom-kanan">
+            
+            <div id="pustaka-search-area">
+                
+                <form id="searchForm" class="search-form-pustaka">
+                    <input id="searchInput" type="search" placeholder="Cari Judul, Penulis, atau Kata Kunci Artikel..." required>
+                    <button type="submit" class="btn-search">Cari</button>
+                </form>
+                
+                <h3 style="margin-top: 2rem;">Hasil Pencarian Terbaru:</h3>
+                
+                <div id="artikelList" style="margin-top: 15px;">
+                    <div class="artikel-item">
+                        <h4>Tutorial Mencintai Tanpa Memiliki</h4>
+                        <p style="font-size: 0.9em; color: #aaa; margin: 5px 0;">Penulis: Cosmic | Tgl: 22 Jan 2007</p>
+                        <p>Rumit. Udah jangan dicoba!</p>
+                        <a href="#" class="btn btn-small">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="buku-content" style="display: none;">
+                <h3>Buku dan Kitab MMA kelas 6</h3>
+                <p style="color: #aaa;">Jan lupa mutholaah yaw!</p>
+                <div class="grid-mapel">
+                    <div class="card">Matematika</div>
+                    <div class="card">Bahasa Indonesia</div>
+                    <div class="card">Sastra Indonesia</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </main>
+    
+  <footer>
+    <p>&copy; 2025 Bramasta by Just Cosmic.</p>
+  </footer>
+  <button id="logout" style="display: none;"><i class="fas fa-power-off"></i></button>
+
+  <div id="uploadModal" class="modal">
+      <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Unggah Artikel</h2>
+          <p style="color: #aaa; margin-bottom: 1.5rem;">Unggah file Anda secara manual ke Google Drive, lalu masukkan link publiknya di bawah.</p>
+          
+          <form id="uploadForm">
+              <label for="judulArtikel">Judul Artikel</label>
+              <input id="judulArtikel" type="text" placeholder="Masukkan judul yang jelas" required />
+              
+              <label for="penulisArtikel">Nama Penulis</label>
+              <input id="penulisArtikel" type="text" placeholder="Contoh: Nama Anda (Universitas/Angkatan)" required />
+              
+              <label for="ringkasanArtikel">Ringkasan (Maks. 200 karakter)</label>
+              <textarea id="ringkasanArtikel" rows="3" maxlength="200" placeholder="Ringkasan singkat isi artikel (Abstract)" required></textarea>
+              
+              <label for="fileUrlArtikel">Link File Artikel (PDF/DOCX)</label>
+              <input id="fileUrlArtikel" type="url" placeholder="Paste link Google Drive/Dropbox/etc. di sini" required />
+              
+              <button type="submit" class="btn" id="submitArtikelBtn" style="margin-top: 1.5rem; width: 100%;">Unggah</button>
+              <p id="uploadStatus" style="text-align: center; margin-top: 10px; color: var(--main-color); display: none;">Menyimpan data...</p>
+          </form>
+      </div>
+  </div>
+</body>
+</html>

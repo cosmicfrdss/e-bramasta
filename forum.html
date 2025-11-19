@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diskusi | Bramasta</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffc300">
+  <link rel=”icon” href=”img/favicon-bramasta.ico” type=”image/x-icon”>
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">E-Bramasta 2025</h1>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kita.html">Us</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="pustaka.html">Library</a></li>
+        <li><a href="forum.html" class="active">Discuss</a></li>
+        <li><a href="saran.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Need Discuss?</h2>
+    
+    <div id="forumList" style="margin-bottom: 2rem;">
+      <h3 style="text-align: center; color: #aaa;">Loading message...</h3>
+    </div>
+
+    <div class="form-card">
+      <p style="text-align: center; margin-bottom: 1rem; color: #ffc300;">Burn Out? Cerita disini ya! :v</p>
+      
+      <label for="topic">Topik</label>
+      <input id="topic" type="text" placeholder="Judul topik (Opsional)" />
+      
+      <label for="message">Pesan</label>
+      <textarea id="message" rows="3" placeholder="Tulis pesanmu di sini..."></textarea>
+      
+      <button id="sendForum" class="btn">Send</button>
+    </div>
+  </main>
+  
+  <button id="logout" title="Logout"><i class="fas fa-power-off"></i></button>
+
+  <footer>
+    © 2025 Bramasta by Just Cosmic.
+  </footer>
+</body>
+</html>
