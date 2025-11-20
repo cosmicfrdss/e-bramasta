@@ -59,7 +59,7 @@ if (loginForm) {
             });
 
     } else {
-        alert("Sistem autentikasi (Firebase) belum siap. Coba refresh halaman.");
+        alert("Sistem autentikasi belum siap. Coba refresh halaman.");
     }
   });
 }
@@ -170,7 +170,7 @@ if (typeof firebase !== 'undefined') {
             forumList.scrollTop = forumList.scrollHeight;
         }, error => {
             console.error("Error setting up forum listener: ", error);
-            forumList.innerHTML = '<h2>Error memuat pesan forum. Cek koneksi Anda.</h2>';
+            forumList.innerHTML = '<h2>Error: memuat pesan forum. Cek koneksi Anda.</h2>';
         });
     }
 
@@ -200,7 +200,7 @@ if (typeof firebase !== 'undefined') {
 
 
 } else if (document.getElementById('forumList')) {
-    document.getElementById('forumList').innerHTML = '<h2>[Error Firebase]: Pastikan CDN SDK Firebase ada di file forum.html.</h2>';
+    document.getElementById('forumList').innerHTML = '<h2>[Error]: Pastikan CDN SDK Firebase ada di file forum.html.</h2>';
 }
 // =======================================================
 // FIREBASE CONFIGURATION (END)
@@ -350,9 +350,9 @@ if (window.location.pathname.includes('pustaka.html')) {
                     const item = document.createElement('div');
                     item.className = 'artikel-item';
                     item.innerHTML = `
-                        <h4>[Judul Artikel: ${data.title}]</h4>
-                        <p style="font-size: 0.9em; color: #aaa; margin: 5px 0;">Penulis: ${data.author} | Tgl: ${date}</p>
-                        <p>Ringkasan: ${data.summary}</p>
+                        <h4> ${data.title}</h4>
+                        <p style="font-size: 0.9em; color: #aaa; margin: 5px 0;">${data.author} | ${date}</p>
+                        <p>${data.summary}</p>
                         <a href="${data.fileUrl}" target="_blank" class="btn btn-small">Baca Selengkapnya</a>
                     `;
                     artikelList.appendChild(item);
@@ -393,13 +393,13 @@ if (window.location.pathname.includes('pustaka.html')) {
                     });
 
                     // Sukses
-                    alert("Metadata artikel berhasil disimpan! Pastikan link file sudah diatur publik.");
+                    alert("Artikel berhasil diunggah! Pastikan link file sudah diatur publik.");
                     uploadModal.style.display = 'none';
                     uploadForm.reset();
 
                 } catch (error) {
-                    console.error("Error saat menyimpan metadata artikel: ", error);
-                    alert("Gagal menyimpan metadata artikel: " + error.message);
+                    console.error("Error saat mengunggah artikel: ", error);
+                    alert("Gagal mengunggah artikel: " + error.message);
                 } finally {
                     // Sembunyikan status loading
                     document.getElementById('uploadStatus').style.display = 'none';
