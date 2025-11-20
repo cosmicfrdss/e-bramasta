@@ -1,4 +1,4 @@
-const CACHE_NAME = "bramasta-cache-v2";
+const CACHE_NAME = "bramasta-cache-v3";
 // Daftar semua file inti yang harus disimpan di cache (offline)
 const urlsToCache = [
   "index.html",
