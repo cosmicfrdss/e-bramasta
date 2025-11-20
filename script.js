@@ -268,17 +268,16 @@ if (window.location.pathname.includes('pustaka.html')) {
 
     if (artikelBtn && bukuBtn && searchArea && bukuContent) {
         
-// 🟢 PERBAIKAN SEMENTARA UNTUK DEBUGGING DI HP
-// Abaikan status login dan paksa tombol muncul
-if (uploadBtn) {
-    uploadBtn.style.display = 'block'; 
-}
-// 🟢 PERBAIKAN SEMENTARA UNTUK DEBUGGING DI HP
-// Abaikan status login dan paksa tombol muncul
-if (uploadBtn) {
-    uploadBtn.style.display = 'block'; 
-}
+        // Cek Status Login (untuk tombol upload)
+        const isLoggedIn = localStorage.getItem("loggedIn") === "true"; 
+        const isGuest = localStorage.getItem("guest") === "true"; // Perbaikan: Ambil status Guest
 
+        // Logika Tombol Upload: Muncul jika LoggedIn ATAU Guest (untuk kemudahan testing)
+        if (isLoggedIn || isGuest) { 
+            if (uploadBtn) {
+                uploadBtn.style.display = 'block'; 
+            }
+        }
         
         // 2. Fungsi Toggle Konten (Buku vs Artikel)
         const toggleContent = (activeBtn, inactiveBtn, activeContent, inactiveContent) => {
