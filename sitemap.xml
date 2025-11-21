@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sixanimal.netlify.app/</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pustaka</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/album</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/forum</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/saran</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/bahasa-indonesia.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/tarikh-tasyri.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/notfound</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/ilmu-hadits.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/fiqih.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/qowaid-fiqih.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/hadits.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/tasawwuf.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/tafsir.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sixanimal.netlify.app/pdf/baca-kitab.pdf</loc>
+  <lastmod>2025-10-21T12:06:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
